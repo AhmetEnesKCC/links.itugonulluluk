@@ -22,7 +22,11 @@ const IconLink = (props: IconButtonProps) => {
         !props.soon ? "hover:!bg-accent" : "hover:!bg-accent-foreground"
       )}
     >
-      <Link className="flex-1 self-stretch aspect-square  " href={props.link}>
+      <Link
+        className="flex-1 self-stretch aspect-square  "
+        href={props.link}
+        target="_blank"
+      >
         {React.cloneElement(props.icon, {
           color: props.soon
             ? tailwindColors.background
