@@ -5,8 +5,14 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="absolute bg-gradient-to-b from-transparent to-background w-full h-full z-[3]"></div>
-      <div className="w-full aspect-[16/7] relative">
+      <div
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, rgba(4, 4, 5, 0.00) 49.4%, #09090B 100%)",
+        }}
+        className="absolute    w-full h-full z-[3]"
+      ></div>
+      <div className="w-full aspect-[1.84]  relative">
         <Image
           fill
           alt="hero color"
@@ -15,8 +21,8 @@ const Hero = () => {
           objectPosition="top"
         />
       </div>
-      <div className="  mt-[-60px] md:mt-[-120px] relative z-[4]">
-        <LogoSVG width={"auto"} className="h-[120px] md:h-[240px]" />
+      <div className="  mt-[-60px] md:mt-[-120px] relative z-[4] ">
+        <LogoSVG width={"auto"} className="h-[120px] md:h-[240px] mx-auto" />
         <h1 className="mt-6 text-2xl md:text-3xl font-bold text-center">
           İTÜ Gönüllülük Kulübü
         </h1>
