@@ -10,7 +10,7 @@ const LabelIconButton = (props: LabelIconButtonProps) => {
           <span className="text-ellipsis overflow-hidden text-left w-full">
             {props.label}
           </span>
-          <div className="h-full w-max">{props.icon}</div>
+          <div className="h-full aspect-square">{props.icon}</div>
         </div>
       </Button>
     </Link>
